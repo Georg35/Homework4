@@ -15,22 +15,21 @@ public class Main {
 
     public static void task1() {
         System.out.println("Задача 1");
-        int age = 20;
+        int age = 15;
         if (age >= 18) {
             System.out.println("Вы совершеннолетний");
-        }
-        if (age < 18) {
+        } else {
             System.out.println("Вы не достигли совершеннолетия, нужно немного подождать");
         }
     }
 
+
     public static void task2() {
         System.out.println("Задача 2");
-        int temperature = 3;
+        int temperature = 8;
         if (temperature < 5) {
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку.");
-        }
-        if (temperature >= 5) {
+        } else {
             System.out.println("На уице " + temperature + " градусов, можно идти без шапки.");
         }
 
@@ -38,11 +37,10 @@ public class Main {
 
     public static void task3() {
         System.out.println("Задача 3");
-        int speed = 61;
+        int speed = 55;
         if (speed > 60) {
             System.out.println("Скорость " + speed + " км/ч, придется заплатить штраф.");
-        }
-        if (speed <= 60) {
+        } else {
             System.out.println("Скорость " + speed + " км/ч, можно ездить спокойно");
         }
     }
@@ -80,17 +78,19 @@ public class Main {
 
     public static void task6() {
         System.out.println("Задача 6");
-        int capacityWagon = 70;
-        if (capacityWagon < 102) {
+        int capacityWagon = 10;
+        int allCapacity = 102;
+        int seatPlace = 60;
+        if (capacityWagon < allCapacity) {
             System.out.println("В вагоне есть места");
 
         } else {
             System.out.println("В вагоне мест нет");
             }
-        if (capacityWagon <= 102 && capacityWagon <= 60) {
+        if (capacityWagon <= allCapacity && capacityWagon <= seatPlace) {
             System.out.println("Вы поедете сидя");
         }
-        if (capacityWagon <= 102 && capacityWagon >= 60) {
+        if (capacityWagon <= allCapacity && capacityWagon >= seatPlace) {
             System.out.println("Вы поедете стоя");
         }
     }
